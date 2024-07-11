@@ -1,4 +1,4 @@
-import { Config } from '../config'
+import { Config } from '../apis/dogBreed/config'
 import { getById, create } from '../apis/dogBreed/index'
 import { v4 as uuidv4 } from 'uuid'
 
