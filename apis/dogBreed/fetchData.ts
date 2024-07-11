@@ -1,8 +1,6 @@
-const fetch = require('node-fetch')
-import type { RequestInit as NodeFetchRequestInit, Response } from 'node-fetch'
-
+import fetch, { RequestInit as NodeFetchRequestInit, Response as NodeFetchResponse } from 'node-fetch'
 class HTTPResponseError extends Error {
-  constructor(public response: Response) {
+  constructor(public response: NodeFetchResponse) {
     super(`HTTP Error Response: ${response.status} ${response.statusText}`);
     this.name = "HTTPResponseError"
   }

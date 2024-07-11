@@ -6,7 +6,6 @@ dist/
 test-report*.html
 .env*
 temp/
-.nvmrc
 yarn-error.log
 yarn.lock
 package-lock.json

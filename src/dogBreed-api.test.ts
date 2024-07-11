@@ -2,7 +2,7 @@ import { Config } from '../config'
 import { getById, create } from '../apis/dogBreed/index'
 import { v4 as uuidv4 } from 'uuid'
 
-describe('Dog API Tests', () => {
+describe('Dog API Test', () => {
   const config = new Config();
 
   it('should fetch breed information by ID', async () => {
@@ -24,7 +24,7 @@ describe('Dog API Tests', () => {
     }
   })
 
-  it('should successfully post a favourite', async () => {
+  it('should successfully create a favourite', async () => {
     const imageId = uuidv4() // Generate a random UUID
     const subId = `my-user-${uuidv4().slice(0, 8)}` // Generate a unique UUID
 
