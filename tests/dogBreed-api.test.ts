@@ -3,10 +3,10 @@ import { getById, create } from '../apis/dogBreed/index'
 import { v4 as uuidv4 } from 'uuid'
 
 describe('Dog API Test', () => {
-  const config = new Config();
+  const config = new Config()
 
   it('should fetch breed information by ID', async () => {
-    const breedId = 8;
+    const breedId = 8
 
     try {
       const response = await getById(breedId)
